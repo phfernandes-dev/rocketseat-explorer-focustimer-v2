@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temporizador estilo pomodoro" />
+    <title>Focus Timer - Pomodoro 2.0</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <section id="timer">
+        <div id="counter">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+        <div id="controls">
+          <button data-action="play" class="ph ph-play-circle"></button>
+          <button data-action="stop" class="ph ph-stop-circle"></button>
+          <button data-action="increase" class="ph ph-plus-circle"></button>
+          <button data-action="decrease" class="ph ph-minus-circle"></button>
+        </div>
+      </section>
+      <section id="sounds">
+        <button data-action="forestOn" class="card" id="forestOn">
+          <img data-action="forestOn" src="./assets/forest.svg" alt="" />
+        </button>
+        <button
+          data-action="forestOff"
+          class="card secondary hide"
+          id="forestOff"
+        >
+          <img data-action="forestOff" src="./assets/forest-on.svg" alt="" />
+        </button>
+        <button data-action="rainOn" class="card" id="rainOn">
+          <img data-action="rainOn" src="./assets/rain.svg" alt="" />
+        </button>
+        <button
+          data-action="rainOff"
+          class="card secondary hide"
+          id="rainOff"
+        >
+          <img data-action="rainOff" src="./assets/rain-on.svg" alt="" />
+        </button>
+        <button data-action="coffeeshopOn" class="card" id="coffeeshopOn">
+          <img
+            data-action="coffeeshopOn"
+            src="./assets/coffeeshop.svg"
+            alt=""
+          />
+        </button>
+        <button
+          data-action="coffeeshopOff"
+          class="card secondary hide"
+          id="coffeeshopOff"
+        >
+          <img data-action="coffeeshopOff" src="./assets/coffeeshop-on.svg" alt="" />
+        </button>
+        <button data-action="fireplaceOn" class="card" id="fireplaceOn">
+          <img data-action="fireplaceOn" src="./assets/fireplace.svg" alt="" />
+        </button>
+        <button
+          data-action="fireplaceOff"
+          class="card secondary hide"
+          id="fireplaceOff"
+        >
+          <img data-action="fireplaceOff" src="./assets/fireplace-on.svg" alt="" />
+        </button>
+      </section>
+    </div>
+  </body>
+</html>
